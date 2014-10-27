@@ -5,20 +5,21 @@
 
 define([
     'angular',
-    'filters',
-    'services',
-    'directives',
-    'controllers',
 
-], function (angular, filters, services, directives, controllers) {
+    'services/services',
+    'directive/dir-cookie',
+    'controller'
+
+], function (angular,  services, directives, controller) {
 
     // Declare app level module which depends on filters, and services
 
     return angular.module('americaTrip', [
-        'ngRoute',
-        'americaTrip.filters',
+        'angular',
+
         'americaTrip.services',
         'americaTrip.directives',
-        'americaTrip.controllers'
+        'americaTrip.controller'
+
     ]);
 });

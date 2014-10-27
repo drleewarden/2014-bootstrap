@@ -11,12 +11,9 @@ requirejs.config({
     modn: 'vendor/modernizr.custom.71147',
     touch: 'vendor/jquery.touchSwipe.min',
     carousel: 'vendor/carouFredSel',
-    services: 'services/services',
+
     app: 'app',
-    dircookie: 'directive/dir-cookie',
-    diriso: 'directive/dir-iso',
-    dirinput: 'directive/dir-inputfields',
-    controller: 'controller',
+
     body: 'site/body'
 
 
@@ -82,14 +79,9 @@ require([
   'modn',
   'touch',
   'carousel',
-  'services',
-  'dircookie',
-  'diriso',
-  'controller',
-  'body',
    'app'
 
-], function ($, angular, bootsrap, iso, cookie, modn, touch, carousel, services, dircookie, diriso, controller, body, app) {
+], function ($, angular, bootsrap, iso, cookie, modn, touch, carousel,  app) {
   body.test();
     angular.element().ready(function() {
         angular.resumeBootstrap([app['name']]);
